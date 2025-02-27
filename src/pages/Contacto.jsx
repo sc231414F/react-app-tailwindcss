@@ -1,13 +1,19 @@
 import React from 'react';
-import landscape from '../assets/Mesa.jpg'; // Reutilizamos el fondo
-import logoPlaceholder from '../assets/logo.png'; // Reutilizamos el logo
+import landscape from '../assets/Mesa.jpg';
+import logoPlaceholder from '../assets/logo.png';
 import { Link } from 'react-router-dom';
 
 function Contacto() {
+  // Estilo común para header y footer
+  const headerFooterStyle = {
+    backgroundColor: 'rgba(253, 230, 138, 0.5)', // Amarillo claro con opacidad
+    color: 'black', // Texto negro
+  };
+
   return (
     <div className="min-h-screen flex flex-col">
-      {/* Header (reutilizado) */}
-      <header className="relative z-20 p-4 m-4 c rounded-lg shadow-md">
+      {/* Header */}
+      <header className="relative z-20 p-4 m-4 rounded-lg shadow-md" style={headerFooterStyle}>
         <div className="absolute inset-0 bg-orange-50 bg-opacity-50 backdrop-filter blur-md"></div>
         <div className="relative flex justify-between items-center text-black">
           <div className="flex items-center">
@@ -30,7 +36,7 @@ function Contacto() {
         </div>
       </header>
 
-      {/* Main Content (información de contacto) */}
+      {/* Main Content */}
       <main className="flex-grow flex justify-center items-center relative m-4">
         <div
           className="absolute inset-0"
@@ -61,10 +67,10 @@ function Contacto() {
         </div>
       </main>
 
-      {/* Footer (reutilizado) */}
-      <footer className="bg-opacity-50 bg-orange-50 text-black p-4 text-center m-4 rounded-md shadow-md">
+      {/* Footer */}
+      <footer className="p-4 text-center m-4 rounded-md shadow-md" style={headerFooterStyle}>
         <p className="text-sm">
-          2025 Sabores Colombianos <span className="font-semibold" bg-opacity-50>Todos los derechos reservados</span>
+          2025 Sabores Colombianos <span className="font-semibold">Todos los derechos reservados</span>
         </p>
       </footer>
     </div>

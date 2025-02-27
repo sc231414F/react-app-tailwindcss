@@ -40,7 +40,7 @@ function Home() {
       </header>
 
       {/* Main Content con paisaje de fondo difuminado y panel transparente */}
-      <main className="flex-grow flex justify-center items-center relative m-4 border-y min-h-[800px]">
+      <main className="flex-grow flex justify-center items-center relative m-4 border-y min-h-[1100px]">
         <div
           className="absolute inset-0"
           style={{
@@ -58,26 +58,26 @@ function Home() {
         ></div>
         <div className="absolute top-1/4 left-1/4 transform -translate-x-1/4 -translate-y-1/4 text-white p-8 rounded-lg flex items-center justify-between w-[80%]">
           <div className="w-1/2">
-            <h2 className="text-4xl font-bold mb-4" style={{ fontFamily: 'Roboto, sans-serif', textShadow: '0 0 10px rgba(255, 255, 255, 0.8)' }}>Restaurante Sabores Colombianos</h2>
-            <h1 className="text-3xl font-bold mb-4" style={{ fontFamily: 'Montserrat, sans-serif', letterSpacing: '0.2em', textShadow: '0 0 5px rgba(255, 255, 255, 0.8)' }}>
-              Tu destino culinario.
+            <h2 className="text-7xl font-bold mb-4" style={{ fontFamily: 'Roboto, sans-serif', textShadow: '0 0 10px rgba(255, 255, 255, 0.8)' }}>Restaurante Sabores Colombianos</h2>
+            <h1 className="text-4xl font-bold mb-4" style={{ fontFamily: 'Montserrat, sans-serif', letterSpacing: '0.2em', textShadow: '0 0 5px rgba(255, 255, 255, 0.8)' }}>
+              Tu destino culinario
             </h1>
-            <p className="text-xl font-normal text-gray-300">
+            <p className="text-2xl font-normal text-gray-300">
               Entendemos que tu tiempo es valioso y tu apetito insaciable. Es por eso que hemos reinventado la experiencia gastronómica, combinando la deliciosa comida con la eficiencia de la tecnología.
             </p>
             {mostrarInfo && (
               <div className="mt-4">
-                <h2 className="text-2xl font-semibold mb-2" style={{ textShadow: '0 0 5px rgba(255, 255, 255, 0.8)' }}>Sobre nosotros</h2>
-                <p className="text-gray-300">
+                <h2 className="text-4xl font-semibold mb-2" style={{ textShadow: '0 0 5px rgba(255, 255, 255, 0.8)' }}>Sobre nosotros</h2>
+                <p className="text-2xl text-gray-300">
                   Sabores Colombianos es un restaurante que celebra la rica tradición culinaria de Colombia. Nos apasiona ofrecer platos auténticos y deliciosos, preparados con ingredientes frescos y de la más alta calidad.
                 </p>
-                <p className="text-gray-300 mt-2">
+                <p className="text-2xl text-gray-300 mt-2">
                   Nuestro ambiente acogedor y nuestro servicio excepcional te harán sentir como en casa. ¡Ven y descubre los sabores de Colombia!
                 </p>
-                <p className="text-gray-300 mt-2">
+                <p className="text-2xl text-gray-300 mt-2">
                   Ofrecemos una amplia variedad de platos tradicionales, desde la icónica bandeja paisa hasta el reconfortante ajiaco. También contamos con opciones vegetarianas y veganas para satisfacer todos los gustos.
                 </p>
-                <p className="text-gray-300 mt-2">
+                <p className="text-2xl text-gray-300 mt-2">
                   ¡Te esperamos en Sabores Colombianos para una experiencia gastronómica inolvidable!
                 </p>
                 <button

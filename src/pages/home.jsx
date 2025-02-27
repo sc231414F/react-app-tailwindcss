@@ -105,7 +105,7 @@ function Home() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-opacity-50 bg-gray-700 text-orange-50 p-4 text-center m-4 rounded-md shadow-md">
+      <footer className="bg-opacity-50 bg-gray-700 text-orange-50 p-4 text-center m-4 rounded-md shadow-md" style={{ boxShadow: '0 0 10px rgba(253, 230, 138, 0.5)' }}>
         <p className="text-sm">
           2025 Sabores Colombianos <span className="font-semibold">Todos los derechos reservados</span>
         </p>

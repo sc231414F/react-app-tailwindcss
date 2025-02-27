@@ -40,7 +40,7 @@ function Home() {
       </header>
 
       {/* Main Content con paisaje de fondo difuminado y panel transparente */}
-      <main className="flex-grow flex justify-center items-center relative m-4 border-y min-h-[1100px]">
+      <main className="flex-grow flex justify-center items-center relative m-4 border-y min-h-[1400px]">
         <div
           className="absolute inset-0"
           style={{

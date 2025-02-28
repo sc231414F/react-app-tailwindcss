@@ -14,29 +14,30 @@ function Contacto() {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Header con cuadro transparente y sombra */}
-      <header className="relative z-20 p-4 m-4 rounded-lg shadow-md" style={{ boxShadow: '0 0 10px rgba(253, 230, 138, 0.5)' }}>
-        <div className="absolute inset-0 bg-orange-50 bg-opacity-50 backdrop-filter rounded-md "></div>
-        <div className="relative flex justify-between items-center text-black">
-          <div className="flex items-center">
-            <img src={logoPlaceholder} alt="Logo" className="h-8" />
-          </div>
-          <nav>
-            <ul className="flex space-x-4">
-              <li><Link to="/" className="text-gray-700 hover:text-orange-600" style={{ fontFamily: 'Roboto, sans-serif', textShadow: '0 0 5px rgba(255, 165, 0, 0.7)' }}>Inicio</Link></li>
-              <li><Link to="/contacto" className="text-gray-700 hover:text-orange-300" style={{ fontFamily: 'Roboto, sans-serif', textShadow: '0 0 5px rgba(255, 165, 0, 0.7)' }}>Contacto</Link></li>
-              <li><Link to="/reservas" className="text-gray-700 hover:text-orange-600" style={{ fontFamily: 'Roboto, sans-serif', textShadow: '0 0 5px rgba(255, 165, 0, 0.7)' }}>Reservas</Link></li>
-              <li><Link to="/menu" className="text-gray-700 hover:text-orange-300" style={{ fontFamily: 'Roboto, sans-serif', textShadow: '0 0 5px rgba(255, 165, 0, 0.7)' }}>Menú</Link></li>
-              <li><Link to="/horario" className="text-gray-700 hover:text-orange-600" style={{ fontFamily: 'Roboto, sans-serif', textShadow: '0 0 5px rgba(255, 165, 0, 0.7)' }}>Horario</Link></li>
-              <li>
-                <button className="bg-orange-50 text-gray-700 hover:text-orange-600 py-0.5 px-4 rounded-full font-semibold hover:bg-orange-200" style={{ fontFamily: 'Roboto, sans-serif', textShadow: '0 0 5px rgba(255, 165, 0, 0.7)' }}>
-                  Registro
-                </button>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-
+       {/* Header con cuadro transparente y sombra */}
+            <header className="relative z-20 p-4 m-4 rounded-lg shadow-md" style={{ boxShadow: '0 0 10px rgba(253, 230, 138, 0.5)' }}>
+              <div className="absolute inset-0 bg-gray-700 bg-opacity-50 backdrop-filter rounded-md "></div>
+              <div className="relative flex justify-between items-center text-black">
+                <div className="flex items-center">
+                  <img src={logoPlaceholder} alt="Logo" className="h-8" />
+                </div>
+                <nav>
+                  <ul className="flex space-x-4">
+                    <li><Link to="/" className="text-orange-50 hover:text-orange-300" style={{ fontFamily: 'Roboto, sans-serif', textShadow: '0 0 5px rgba(255, 165, 0, 0.7)' }}>Inicio</Link></li>
+                    <li><Link to="/contacto" className="text-orange-50 hover:text-orange-300" style={{ fontFamily: 'Roboto, sans-serif', textShadow: '0 0 5px rgba(255, 165, 0, 0.7)' }}>Contacto</Link></li>
+                    <li><Link to="/reservas" className="text-orange-50 hover:text-orange-300" style={{ fontFamily: 'Roboto, sans-serif', textShadow: '0 0 5px rgba(255, 165, 0, 0.7)' }}>Reservas</Link></li>
+                    <li><Link to="/menu" className="text-orange-50 hover:text-orange-300" style={{ fontFamily: 'Roboto, sans-serif', textShadow: '0 0 5px rgba(255, 165, 0, 0.7)' }}>Menú</Link></li>
+                    <li><Link to="/horario" className="text-orange-50 hover:text-orange-300" style={{ fontFamily: 'Roboto, sans-serif', textShadow: '0 0 5px rgba(255, 165, 0, 0.7)' }}>Horario</Link></li>
+                    <li>
+                      <button className="bg-gray-700 text-orange-50 hover:text-orange-300 py-0.5 px-4 rounded-full font-semibold hover:bg-gray-600" style={{ fontFamily: 'Roboto, sans-serif', textShadow: '0 0 5px rgba(255, 165, 0, 0.7)' }}>
+                        Registro
+                      </button>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </header>
+      
       {/* Main Content */}
       <main className="flex-grow flex justify-center items-center relative m-4 border-y min-h-[900px]">
         <div

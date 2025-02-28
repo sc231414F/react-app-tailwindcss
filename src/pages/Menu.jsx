@@ -12,16 +12,16 @@ import { Link } from 'react-router-dom';
 
 function Menu() {
     const platosPrincipales = [
-      { nombre: 'Bandeja Paisa', descripcion: 'Un plato abundante con arroz, frijoles, carne molida, chicharrón, huevo, aguacate y plátano maduro.', comentario: '¡Deliciosa y abundante!', imagen: BandejaP },
-      { nombre: 'Ajiaco', descripcion: 'Una sopa espesa de pollo, papas, maíz y guascas, servida con crema de leche y alcaparras.', comentario: '¡Perfecto para un día frío!', imagen: Ajiaco },
-      { nombre: 'Lechona', descripcion: 'Cerdo entero relleno de arroz, arvejas y especias, horneado hasta quedar crujiente.', comentario: '¡Crujiente y llena de sabor!', imagen: Lechona },
-      { nombre: 'Trucha Arcoíris', descripcion: 'Trucha fresca a la parrilla, acompañada de ensalada y papas criollas.', comentario: '¡Fresca y deliciosa!', imagen: Trucha },
+      { nombre: 'Bandeja Paisa', descripcion: 'Un plato abundante con arroz, frijoles, carne molida, chicharrón, huevo, aguacate y plátano maduro.', o: '¡Deliciosa y abundante!', imagen: BandejaP },
+      { nombre: 'Ajiaco', descripcion: 'Una sopa espesa de pollo, papas, maíz y guascas, servida con crema de leche y alcaparras.', o: '¡Perfecto para un día frío!', imagen: Ajiaco },
+      { nombre: 'Lechona', descripcion: 'Cerdo entero relleno de arroz, arvejas y especias, horneado hasta quedar crujiente.', o: '¡Crujiente y llena de sabor!', imagen: Lechona },
+      { nombre: 'Trucha Arcoíris', descripcion: 'Trucha fresca a la parrilla, acompañada de ensalada y papas criollas.', o: '¡Fresca y deliciosa!', imagen: Trucha },
     ];
   
     const bebidas = [
-      { nombre: 'Jugo de Lulo', descripcion: 'Jugo refrescante de lulo, una fruta cítrica y aromática.', comentario: '¡Refrescante y exótico!', imagen: Lulo },
-      { nombre: 'Limonada de Coco', descripcion: 'Limonada cremosa con leche de coco y un toque de limón.', comentario: '¡Cremosa y deliciosa!', imagen: Limonada },
-      { nombre: 'Café Colombiano', descripcion: 'Café de alta calidad, cultivado en las montañas de Colombia.', comentario: '¡Aromático y lleno de sabor!', imagen: Cafecol },
+      { nombre: 'Jugo de Lulo', descripcion: 'Jugo refrescante de lulo, una fruta cítrica y aromática.', o: '¡Refrescante y exótico!', imagen: Lulo },
+      { nombre: 'Limonada de Coco', descripcion: 'Limonada cremosa con leche de coco y un toque de limón.', o: '¡Cremosa y deliciosa!', imagen: Limonada },
+      { nombre: 'Café Colombiano', descripcion: 'Café de alta calidad, cultivado en las montañas de Colombia.', o: '¡Aromático y lleno de sabor!', imagen: Cafecol },
     ];
   
     const [platoSeleccionado, setPlatoSeleccionado] = useState(null);
@@ -92,7 +92,7 @@ function Menu() {
               <div>
                 <h2 className="text-2xl font-semibold mb-4">{platoSeleccionado.nombre}</h2>
                 <p>{platoSeleccionado.descripcion}</p>
-                <p className="mt-4">Comentario: {platoSeleccionado.comentario}</p>
+                <p className="mt-4"> {platoSeleccionado.o}</p>
                 <img src={platoSeleccionado.imagen} alt={platoSeleccionado.nombre} className="w-full h-48 object-cover mt-4 rounded-lg" />
               </div>
             )}
@@ -100,7 +100,7 @@ function Menu() {
               <div>
                 <h2 className="text-2xl font-semibold mb-4">{bebidaSeleccionada.nombre}</h2>
                 <p>{bebidaSeleccionada.descripcion}</p>
-                <p className="mt-4">Comentario: {bebidaSeleccionada.comentario}</p>
+                <p className="mt-4"> {bebidaSeleccionada.o}</p>
                 <img src={bebidaSeleccionada.imagen} alt={bebidaSeleccionada.nombre} className="w-full h-48 object-cover mt-4 rounded-lg" />
               </div>
             )}

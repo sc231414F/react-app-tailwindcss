@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import landscape from '../assets/fondo.jpg';
 import logoPlaceholder from '../assets/logo.png';
 import Comidav from '../assets/comidav.jpg';
-import comida  from '../assets/comida.jpg'
-import comidas  from '../assets/comidass.jpg'
 import { Link } from 'react-router-dom';
 
 function Home() {
@@ -15,7 +13,7 @@ function Home() {
 
   return (
     <div className="min-h-screen flex flex-col">
-      {/* Header con cuadro transparente y sombra */}
+      {/* Header transparente y sombra */}
       <header className="relative z-20 p-4 m-4 rounded-lg shadow-md" style={{ boxShadow: '0 0 10px rgba(253, 230, 138, 0.5)' }}>
         <div className="absolute inset-0 bg-gray-700 bg-opacity-50 backdrop-filter rounded-md "></div>
         <div className="relative flex justify-between items-center text-black">
@@ -39,7 +37,7 @@ function Home() {
         </div>
       </header>
 
-      {/* Main Content con paisaje de fondo difuminado y panel transparente */}
+      {/* Main Content fondo difuminado y panel transparente */}
       <main className="flex-grow flex justify-center items-center relative m-4 border-y min-h-[1100px]">
         <div
           className="absolute inset-0"

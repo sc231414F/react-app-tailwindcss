@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import landscape from '../assets/fondo.jpg';
 import logoPlaceholder from '../assets/logo.png';
-import mesaImage from '../assets/mesa_1.jpg'; // Importa la imagen de la mesa
+import mesaImage from '../assets/mesa_1.jpg'; 
 import { Link } from 'react-router-dom';
 
 function Reservas() {

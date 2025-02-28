@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import Comidav from '../assets/comida.jpg';
 
 function Contacto() {
-  // Estilo común para header y footer
+  // Estilo de header y footer
   const headerFooterStyle = {
     backgroundColor: 'rgba(253, 230, 138, 0.5)', // Amarillo claro con opacidad
     color: 'black', // Texto negro
@@ -13,7 +13,6 @@ function Contacto() {
 
   return (
     <div className="min-h-screen flex flex-col">
-      {/* Header con cuadro transparente y sombra */}
        {/* Header con cuadro transparente y sombra */}
             <header className="relative z-20 p-4 m-4 rounded-lg shadow-md" style={{ boxShadow: '0 0 10px rgba(253, 230, 138, 0.5)' }}>
               <div className="absolute inset-0 bg-gray-700 bg-opacity-50 backdrop-filter rounded-md "></div>
@@ -56,7 +55,7 @@ function Contacto() {
           }}
         ></div>
 
-        {/* Contenido de contacto fuera del contenedor translúcido */}
+        {/* Contenido de contacto fuera del contenedor */}
         <div className="absolute top-1/4 left-1/4 transform -translate-x-1/4 -translate-y-1/4 w-[80%]">
           <div className="flex justify-between items-start">
             <div>
